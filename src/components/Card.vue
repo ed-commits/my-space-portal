@@ -42,4 +42,10 @@ export default {
   font-size: 0.8em;
   margin: 0;
 }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
 </style>

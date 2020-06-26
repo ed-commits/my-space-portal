@@ -6,6 +6,11 @@
           <HubbleSite/>
         </div>
       </Card>
+      <Card title="NASAApod">
+        <div slot="body">
+          <NASAApod/>
+        </div>
+      </Card>
       <Card title="Who is in space right now?">
         <div slot="body">
           <CurrentlyInSpace/>
@@ -26,6 +31,7 @@
 <script>
 import Card from "./components/Card.vue";
 import HubbleSite from "./components/HubbleSite.vue";
+import NASAApod from "./components/NASAApod.vue";
 import CurrentlyInSpace from "./components/CurrentlyInSpace.vue";
 import UpcomingLaunches from "./components/UpcomingLaunches.vue";
 
@@ -34,6 +40,7 @@ export default {
   components: {
     Card,
     HubbleSite,
+    NASAApod,
     CurrentlyInSpace,
     UpcomingLaunches
   }

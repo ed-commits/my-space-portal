@@ -1,8 +1,8 @@
 <template>
   <div v-if="hubble">
     <h2>{{ hubble.name }}</h2>
-    <p>{{ hubble.abstract }}</p>
     <img :src="hubble.keystone_image_1x" />
+    <p>{{ hubble.abstract }}</p>
     <p class="credit">Information from: http://hubblesite.org/api/documentation</p>
   </div>
 </template>
