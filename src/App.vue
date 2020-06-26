@@ -3,26 +3,28 @@
     <div class="dashboard">
       <Card title="Hubble News">
         <div slot="body">
-          <HubbleSite/>
+          <HubbleSite />
         </div>
       </Card>
       <Card title="NASAApod">
         <div slot="body">
-          <NASAApod/>
+          <NASAApod />
         </div>
       </Card>
       <Card title="Who is in space right now?">
         <div slot="body">
-          <CurrentlyInSpace/>
+          <CurrentlyInSpace />
         </div>
       </Card>
       <Card title="Upcoming Launches">
         <div slot="body">
-          <UpcomingLaunches/>
+          <UpcomingLaunches />
         </div>
       </Card>
-      <Card title="Card3">
-        <div slot="body">body3</div>
+      <Card title="Exoplanets">
+        <div slot="body">
+          <Exoplanets />
+        </div>
       </Card>
     </div>
   </div>
@@ -34,6 +36,7 @@ import HubbleSite from "./components/HubbleSite.vue";
 import NASAApod from "./components/NASAApod.vue";
 import CurrentlyInSpace from "./components/CurrentlyInSpace.vue";
 import UpcomingLaunches from "./components/UpcomingLaunches.vue";
+import Exoplanets from "./components/Exoplanets.vue";
 
 export default {
   name: "App",
@@ -42,7 +45,8 @@ export default {
     HubbleSite,
     NASAApod,
     CurrentlyInSpace,
-    UpcomingLaunches
+    UpcomingLaunches,
+    Exoplanets
   }
 };
 </script>
@@ -51,12 +55,11 @@ export default {
 #app {
   max-width: 80ch;
   margin: 0 auto;
-  font-family: 'Assistant';
+  font-family: "Assistant";
   font-size: 1.2rem;
 }
 
 .dashboard {
 }
-
 </style>
 
