@@ -1,4 +1,9 @@
 What kinds of information will we use?
-* Who is currently in space.
-* Upcoming launches
 * Exoplanets
+
+Maybe:
+* https://docs.spacexdata.com/?version=latest
+
+Done:
+* Who is currently in space. TODO: how long have they been there?
+* Upcoming launches

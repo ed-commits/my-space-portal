@@ -35,4 +35,11 @@ export default {
     background-color: grey;
     padding: 20px;
 }
+
+.credit {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 0;
+}
 </style>

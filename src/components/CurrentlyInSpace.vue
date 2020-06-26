@@ -1,6 +1,7 @@
 <template>
   <div>
     <ul v-if="astros">
+      <p>There are currently {{ astros.number }} astronauts in space:</p>
       <li v-for="(astro, key) in astros.people" :key="key">{{ astro.name}} on {{ astro.craft }}</li>
     </ul>
     <p class="credit">Information from: http://api.open-notify.org/astros.json</p>
@@ -23,10 +24,4 @@ export default {
 </script>
 
 <style>
-.credit {
-    text-align: right;
-    font-style: italic;
-    font-size: 0.8em;
-    margin: 0;
-}
 </style>

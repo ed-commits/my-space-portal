@@ -6,8 +6,10 @@
           <CurrentlyInSpace/>
         </div>
       </Card>
-      <Card title="Card2">
-        <div slot="body">body2</div>
+      <Card title="Upcoming Launches">
+        <div slot="body">
+          <UpcomingLaunches/>
+        </div>
       </Card>
       <Card title="Card3">
         <div slot="body">body3</div>
@@ -19,24 +21,28 @@
 <script>
 import Card from "./components/Card.vue";
 import CurrentlyInSpace from "./components/CurrentlyInSpace.vue";
+import UpcomingLaunches from "./components/UpcomingLaunches.vue";
 
 export default {
   name: "App",
   components: {
     Card,
-    CurrentlyInSpace
+    CurrentlyInSpace,
+    UpcomingLaunches
   }
 };
 </script>
 
 <style>
 #app {
-  width: 80ch;
+  max-width: 80ch;
   margin: 0 auto;
   font-family: 'Assistant';
+  font-size: 1.2rem;
 }
 
 .dashboard {
 }
+
 </style>
 
