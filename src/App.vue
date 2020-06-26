@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="dashboard">
+      <Card title="Card1">
+        <div slot="body">body1</div>
+      </Card>
+      <Card title="Card2">
+        <div slot="body">body2</div>
+      </Card>
+      <Card title="Card3">
+        <div slot="body">body3</div>
+      </Card>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from "./components/Card.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Card
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 80ch;
+  margin: 0 auto;
+  font-family: 'Assistant';
+}
+
+.dashboard {
 }
 </style>
+
