@@ -1,6 +1,11 @@
 <template>
   <div id="app">
     <div class="dashboard">
+      <Card title="Hubble News">
+        <div slot="body">
+          <HubbleSite/>
+        </div>
+      </Card>
       <Card title="Who is in space right now?">
         <div slot="body">
           <CurrentlyInSpace/>
@@ -20,6 +25,7 @@
 
 <script>
 import Card from "./components/Card.vue";
+import HubbleSite from "./components/HubbleSite.vue";
 import CurrentlyInSpace from "./components/CurrentlyInSpace.vue";
 import UpcomingLaunches from "./components/UpcomingLaunches.vue";
 
@@ -27,6 +33,7 @@ export default {
   name: "App",
   components: {
     Card,
+    HubbleSite,
     CurrentlyInSpace,
     UpcomingLaunches
   }

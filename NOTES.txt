@@ -1,5 +1,11 @@
+Ideal Features:
+* Do not load the API until the card is opened
+* Save favorites (opened cards) using localstorage
+
+
 What kinds of information will we use?
 * Exoplanets
+* http://hubblesite.org/api/v3/news_release/last
 
 Maybe:
 * https://docs.spacexdata.com/?version=latest
@@ -7,3 +13,5 @@ Maybe:
 Done:
 * Who is currently in space. TODO: how long have they been there?
 * Upcoming launches
+
+
