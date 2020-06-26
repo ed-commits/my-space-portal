@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="launches.result">
+    <div v-if="launches">
       <div v-for="(launch, key) in launches.result" :key="key">
         <h3>{{ launch.name }} is scheduled to launch on {{ launch.date_str }}</h3>
         <p>{{ launch.launch_description }}</p>
