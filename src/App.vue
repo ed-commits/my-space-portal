@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <div class="dashboard">
-      <Card title="Card1">
-        <div slot="body">body1</div>
+      <Card title="Who is in space right now?">
+        <div slot="body">
+          <CurrentlyInSpace/>
+        </div>
       </Card>
       <Card title="Card2">
         <div slot="body">body2</div>
@@ -16,11 +18,13 @@
 
 <script>
 import Card from "./components/Card.vue";
+import CurrentlyInSpace from "./components/CurrentlyInSpace.vue";
 
 export default {
   name: "App",
   components: {
-    Card
+    Card,
+    CurrentlyInSpace
   }
 };
 </script>
