@@ -5,7 +5,7 @@ Background image credit: https://commons.wikimedia.org/wiki/File:Pink_Opaque.jpg
 body {
     background-color: black;
     background: url("Pink_Opaque.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100%;
     background-attachment: fixed;
 }
