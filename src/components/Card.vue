@@ -21,7 +21,7 @@ export default {
     };
   },
   mounted() {
-    this.enabled = window.localStorage.getItem(this.title) == 'true';
+    this.enabled = window.localStorage.getItem(this.title) == "true";
   },
   computed: {
     toggleStatus() {
@@ -39,23 +39,28 @@ export default {
 
 <style>
 .card {
-  border: 1px solid rgb(5, 12, 114);
-
-  margin: 10px;
+  margin: 20px;
 }
 
 .card-title {
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(189, 199, 230);
   padding: 0;
+  border-radius: 30px 30px 0px 0px;
 }
+
 .card-title h1 {
   margin: 0;
   padding: 10px;
 }
 
+span {
+  font-size: 0.8em;
+}
+
 .card-body {
-  background-color: grey;
+  background-color: #cfe3e8;
   padding: 20px;
+  border-radius: 0px 0px 30px 30px;
 }
 
 .credit {
